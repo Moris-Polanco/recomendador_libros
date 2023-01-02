@@ -27,7 +27,7 @@ st.markdown("Este es un recomendador de libros personalizado que utiliza GPT-3 p
 
 genero = st.text_input("¿Qué tipo de libros en español te gustaría leer?", "ciencia ficción")
 edad = st.number_input("¿Cuál es tu edad?", min_value=0, max_value=100)
-sexo = st.radio("¿Cuál es tu género?", ("Hombre", "Mujer", "Otro"))
+sexo = st.radio("¿Cuál es tu seexo?", ("Hombre", "Mujer"))
 autores_favoritos = st.text_input("¿Cuáles son tus autores favoritos?", "Isaac Asimov, Arthur C. Clarke")
 
 recomendaciones = obtener_recomendaciones(genero, edad, sexo, autores_favoritos)
