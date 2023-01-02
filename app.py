@@ -1,7 +1,9 @@
 import openai
 import streamlit as st
+import os
 
-openai.api_key = 
+# Autenticación de OpenAI (oculta la clave en una variable de entorno)
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 def obtener_recomendaciones(genero, edad, sexo, autores_favoritos):
   model_engine = "text-davinci-003"
